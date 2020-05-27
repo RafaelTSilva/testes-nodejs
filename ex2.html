@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>
+        Exer 2
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var sal, prest;
+        sal = prompt("Digite o salário bruto do funcionário");
+        prest = prompt("Digite o valor da prestação");
+
+        if (isNaN(sal) || isNaN(prest) || sal < 0 || prest < 0) {
+            document.write("Digite valores válidos");
+        }
+        else {
+            document.write("Salário Bruto Informado: R$ " + parseFloat(sal).toFixed(2) + "<br>");
+            document.write("Prestação Informada: R$ " + parseFloat(prest).toFixed(2) + "<br>");
+            if (sal * 0.3 < prest) {
+                document.write("Reprovado, prestação compromete mais de 30% do salário");
+            }
+            else {
+                document.write("Aprovado, parabéns!");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>
+        Exer 3
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var idade;
+        idade = prompt("Digite a idade do eleitor");
+        if (isNaN(idade) || idade < 0) {
+            document.write(idade + " não é um número válido");
+        }
+        else if (idade < 16) {
+            document.write("Não eleitor, <b>" + idade + "</b> é menor que 16 anos.");
+        } else if (idade > 18 && idade < 65) {
+            document.write("Voto obrigatório, <b>" + idade + "</b> é maior que 18 anos e menor que 65 anos.");
+        }
+        else {
+            document.write("Eleitor facultativo, <b>" + idade + "</b> está entre 16 e 17 anos ou é maior que 65 anos.");
+        }
+    </script>
+</body>
+
+</html>

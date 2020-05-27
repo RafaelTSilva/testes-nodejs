@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>
+        Exer 4
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var altura, sexo, peso, erro;
+        altura = prompt("Informe a altura");
+        sexo = prompt("Informe o sexo (M ou F)");
+        erro = "";
+
+        if (isNaN(altura) || altura < 0) {
+            erro += "Altura informada inválida.<br>";
+        }
+        if (sexo == "M" || sexo == "m") {
+            peso = 72.7 * altura - 58;
+        }
+        else if (sexo == "F" || sexo == "f") {
+            peso = 62.1 * altura - 44.7;
+        }
+        else {
+            erro += "Sexo informado inválido.<br>";
+        }
+        if (peso > 0) {
+            document.write("Peso ideal é de <b>" + peso.toFixed(2) + "kg</b>");
+        }
+        else {
+            erro = "Dados inseridos inválidos.<br>" + erro;
+        }
+        document.write(erro);
+    </script>
+</body>
+
+</html>

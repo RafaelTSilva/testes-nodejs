@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>
+        Exer 1
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var num, res;
+        num = prompt("Digite um número inteiro");
+        if(isNaN(num)){
+            document.write(num +" não é um número");
+        }
+        if (parseInt(num) != num) {
+            document.write(num + " não é um número inteiro");
+        }
+        else {
+            res = "par";
+            if (Math.abs(num) % 2 > 0) {
+                res = "ímpar";
+            }
+            document.write("O número " + num + " é " + res);
+        }
+
+    </script>
+</body>
+
+</html>
